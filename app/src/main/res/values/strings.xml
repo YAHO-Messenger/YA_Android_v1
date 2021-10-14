@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">YAHO</string>
+    <string name="no_account"><font face="sbaugrol">계정이 없으신가요? <b>회원가입</b></font></string>
 </resources>
