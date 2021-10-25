@@ -8,10 +8,10 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="360dp"
-        android:layout_height="360dp"
-        android:layout_marginTop="-48dp"
-        android:src="@drawable/logo2"
+        android:layout_width="260dp"
+        android:layout_height="260dp"
+        android:src="@drawable/logo3"
+        android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -20,7 +20,7 @@
         android:id="@+id/login_btn"
         android:layout_width="240dp"
         android:layout_height="56dp"
-        android:layout_marginBottom="64dp"
+        android:layout_marginBottom="184dp"
         android:background="@drawable/white_background"
         android:fontFamily="@font/sbaugrom"
         android:text="로그인"
@@ -31,21 +31,22 @@
 
     <TextView
         android:id="@+id/noAccount"
-        style="@style/TextAppearance.MaterialComponents.Caption"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/sbaugrom"
         android:text="@string/no_account"
+        android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/login_btn" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/idTil"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="352dp"
-        android:layout_height="72dp"
-        android:layout_marginBottom="24dp"
+        android:layout_width="346dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="20dp"
         app:layout_constraintBottom_toTopOf="@+id/passwordTil"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
@@ -53,7 +54,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/idEt"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:fontFamily="@font/sbaugrol"
             android:hint="아이디"
             android:inputType="text" />
@@ -62,9 +63,9 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/passwordTil"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="352dp"
-        android:layout_height="72dp"
-        android:layout_marginBottom="56dp"
+        android:layout_width="346dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="40dp"
         app:layout_constraintBottom_toTopOf="@+id/login_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -73,7 +74,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/passwordEt"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:fontFamily="@font/sbaugrol"
             android:hint="비밀번호"
             android:inputType="textPassword" />
