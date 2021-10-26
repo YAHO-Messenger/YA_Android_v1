@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">YAHO</string>
     <string name="no_account">계정이 없으신가요? <u><b>회원가입</b></u></string>
+    <string name="have_account">계정이 이미 있으신가요? <u><b>로그인</b></u></string>
 </resources>
