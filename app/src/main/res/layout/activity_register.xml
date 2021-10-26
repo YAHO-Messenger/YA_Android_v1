@@ -44,8 +44,8 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/idTil"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="352dp"
-        android:layout_height="wrap_content"
+        android:layout_width="346dp"
+        android:layout_height="64dp"
         android:layout_marginBottom="20dp"
         app:layout_constraintBottom_toTopOf="@+id/passwordTil"
         app:layout_constraintEnd_toEndOf="parent"
@@ -64,11 +64,11 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/passwordTil"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="352dp"
-        android:layout_height="wrap_content"
+        android:layout_width="346dp"
+        android:layout_height="64dp"
         android:layout_marginBottom="40dp"
-        android:layout_marginStart="30dp"
         app:layout_constraintBottom_toTopOf="@+id/register_btn"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:passwordToggleEnabled="true">
 
