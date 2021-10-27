@@ -16,9 +16,6 @@ class RegisterActivity : AppCompatActivity() {
     //ViewBinding
     private lateinit var  binding: ActivityRegisterBinding
 
-    //ActionBar
-    private lateinit var  actionBar: ActionBar
-
     //ProgressDialog
     private lateinit var progressDialog: ProgressDialog
 

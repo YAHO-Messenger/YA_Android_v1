@@ -16,9 +16,6 @@ class LoginActivity : AppCompatActivity() {
     //viewBinding
     private lateinit var binding: ActivityLoginBinding
 
-    //ActionBar
-    private lateinit var actionBar: ActionBar
-
     //progressDialog
     private lateinit var  progressDialog: ProgressDialog
 
