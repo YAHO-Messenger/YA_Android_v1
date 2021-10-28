@@ -6,10 +6,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 
-class MovieFragment : Fragment() {
+
+class FoodFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
     }
 
     override fun onCreateView(
@@ -17,13 +19,13 @@ class MovieFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_movie, container, false)
+        return inflater.inflate(R.layout.fragment_food, container, false)
     }
 
     companion object {
         @JvmStatic
         fun newInstance() =
-            MovieFragment().apply{
+            FoodFragment().apply{
                 arguments = Bundle().apply {  }
             }
 
