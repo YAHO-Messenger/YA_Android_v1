@@ -71,23 +71,20 @@ class LoginActivity : AppCompatActivity() {
         firebaseAuth.signInWithEmailAndPassword(email,password)
             .addOnSuccessListener {
                 progressDialog.dismiss()
-                Toast.makeText(this, "환영합니다", Toast.LENGTH_SHORT).show()
+
+                val firebaseUser = firebaseAuth.currentUser
+                val email = firebaseUser!!.email
+                Toast.makeText(this, "$email 로 로그인 성공!", Toast.LENGTH_SHORT).show()
                 startActivity(Intent(this, MainActivity::class.java))
+                finish()
             }
             .addOnFailureListener { e->
                 progressDialog.dismiss()
                 Toast.makeText(this, "정보가 일치하지 않습니다", Toast.LENGTH_SHORT).show()
-                startActivity((Intent(this, LoginActivity::class.java)))
-                val firebaseUser = firebaseAuth.currentUser
-                val email = firebaseUser!!.email
-
-                Toast.makeText(this,"loggedIn as $email", Toast.LENGTH_SHORT).show()
-                startActivity(Intent(this, LoginActivity::class.java))
             }
     }
 
     private fun checkUser() {
-        //만약 이미 로그인됬다면 profile로 이동
         val firebaseUser = firebaseAuth.currentUser
         if(firebaseUser !=null){
             startActivity(Intent(this, MainActivity::class.java))
