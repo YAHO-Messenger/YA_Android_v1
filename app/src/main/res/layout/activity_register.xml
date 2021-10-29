@@ -31,7 +31,7 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/register_btn"
-        android:layout_width="346dp"
+        android:layout_width="340dp"
         android:layout_height="48dp"
         android:layout_marginBottom="120dp"
         android:background="@drawable/white_background"
@@ -44,7 +44,7 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/idTil"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="346dp"
+        android:layout_width="340dp"
         android:layout_height="56dp"
         android:layout_marginBottom="20dp"
         app:layout_constraintBottom_toTopOf="@+id/passwordTil"
@@ -64,7 +64,7 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/passwordTil"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="346dp"
+        android:layout_width="340dp"
         android:layout_height="56dp"
         android:layout_marginBottom="40dp"
         app:layout_constraintBottom_toTopOf="@+id/register_btn"
