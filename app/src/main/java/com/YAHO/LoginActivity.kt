@@ -41,8 +41,8 @@ class LoginActivity : AppCompatActivity() {
 
         binding.loginBtn.setOnClickListener {
 
-            val email = binding.idEt.text.toString()
-            val password = binding.passwordEt.text.toString()
+            val email = binding.idEt.toString()
+            val password = binding.passwordEt.toString()
             service.login(Login(email, password)).enqueue(object : Callback<String> {
                 override fun onResponse(call: Call<String>, response: Response<String>) {
                     val result = response.body()
