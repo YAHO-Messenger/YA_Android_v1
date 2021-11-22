@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,33 +8,6 @@
     tools:context=".MainActivity">
 
 
-    <FrameLayout
-        android:id="@+id/fragmentContainer"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@+id/bottomNavigation" />
 
-    <com.etebarian.meowbottomnavigation.MeowBottomNavigation
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:id="@+id/bottomNavigation"
-        app:mbn_countBackgroundColor="#ff6f00"
-        app:mbn_countTextColor="#000"
-        app:mbn_defaultIconColor="#90a4ae"
-        app:mbn_rippleColor="#2f424242"
-        app:mbn_selectedIconColor="#4A474E"
-        app:mbn_shadowColor="#5000"
-        />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/logout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="0dp"
-        android:background="@drawable/white_background"
-        android:text="로그아웃"
-        android:fontFamily="@font/sbaugrol"/>
-
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
